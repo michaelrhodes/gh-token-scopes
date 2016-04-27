@@ -1,0 +1,32 @@
+{
+  "name": "gh-token-scopes",
+  "version": "0.0.0",
+  "description": "get the list of scopes for a github access token",
+  "main": "index.js",
+  "dependencies": {
+    "gh-api-headers": "~1.0.1",
+    "xhr-request": "~1.0.1"
+  },
+  "devDependencies": {
+    "tape": "~4.5.1"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:michaelrhodes/gh-token-scopes"
+  },
+  "keywords": [
+    "github",
+    "access",
+    "token",
+    "scopes"
+  ],
+  "author": "Michael Rhodes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelrhodes/gh-token-scopes/issues"
+  },
+  "homepage": "https://github.com/michaelrhodes/gh-token-scopes"
+}
