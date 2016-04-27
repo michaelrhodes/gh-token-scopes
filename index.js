@@ -1,6 +1,5 @@
 var request = require('xhr-request')
 var headers = require('gh-api-headers')
-var noop = function () {}
 
 function scopes (token, cb) {
   var opt = {
