@@ -1,6 +1,6 @@
 # gh-token-scopes
 
-If your application relies on [personal access tokens](https://github.com/settings/tokens) (whose permissions an be updated at any time) you may want to verify the scope range *before* making any API calls; this module helps you do just that.
+If your application relies on [personal access tokens](https://github.com/settings/tokens) (whose permissions can be updated at any time) you may want to verify the scope range *before* making any API calls; this module helps you do just that.
 
 ** I don’t want to expose an access token, so CI is out of the question, but you can easily [run the tests](#running-the-tests) yourself. **
 
