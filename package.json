@@ -1,6 +1,6 @@
 {
   "name": "gh-token-scopes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "get the list of scopes for a github access token",
   "main": "index.js",
   "dependencies": {
