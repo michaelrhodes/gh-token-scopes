@@ -3,16 +3,15 @@ var headers = require('gh-api-headers')
 
 function scopes (token, cb) {
   var opt = {
-    json: true,
-    headers: headers({
-      token: token
-    })
+    // `xhr` is broken
+    method: process.browser ? 'GET' : 'HEAD',
+    headers: headers({ token: token })
   }
 
   request('https://api.github.com', opt, collect)
 
   function collect (err, data, res) {
-    if (err) return cb(err)
+    if (err && !res) return cb(err)
     var header = res.headers['x-oauth-scopes']
     var scopes = header ? header.split(/,\s*/) : []
     cb(null, scopes)
